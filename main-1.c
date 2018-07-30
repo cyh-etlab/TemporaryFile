@@ -11,9 +11,9 @@ void PA5_IRQHandler()
 int main() 
 {
 	button.rise(&PA5_IRQHandler); 
-  while(1)
+	while(1)
 	{
-		 led1 = !led1;
-     wait(0.2);
-  }
+		led1 = !led1;
+		wait(0.2);
+	}
 }
